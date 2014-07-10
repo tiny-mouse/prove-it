@@ -32,6 +32,8 @@ Things TODO:
 Running the "Apps"
 ==================
 If you want to run one of the apps do the following:
+
+
 1. Make sure you have your virtualenv activated.
 2. Be in the `prove-it` directory.
 3. python -m calc.views (to get the calc app running)
