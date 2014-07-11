@@ -16,7 +16,7 @@ def index():
 
 @app.route("/add", methods=['GET'])
 def add():
-    "Takes numbers params and sums them together"
+    """Takes numbers params and sums them together"""
     if not request.args.getlist('numbers'):
         return "You need to give numbers to add", 400
     numbers = request.args.get('numbers')
@@ -25,7 +25,7 @@ def add():
 
 @app.route("/subtract", methods=['GET'])
 def subtract():
-    "Takes numbers params and subtracts them from the first"
+    """Takes numbers params and subtracts them from the first"""
     if not request.args.get('numbers'):
         return "You need to give numbers to subtract", 400
     numbers = request.args.getlist('numbers')
@@ -34,7 +34,7 @@ def subtract():
 
 @app.route("/multiply", methods=['GET'])
 def multiply():
-    "Takes numbers params and multiplies them together"
+    """Takes numbers params and multiplies them together"""
     if not request.args.get('numbers'):
         return "You need to give numbers to multiply", 400
     numbers = request.args['numbers']
@@ -43,7 +43,7 @@ def multiply():
 
 @app.route("/divide", methods=['GET'])
 def divide():
-    "Takes numbers params and divides them."
+    """Takes numbers params and divides them."""
     if not request.args.get('numbers'):
         return "You need to give numbers to divide", 400
     return "I'm a divider"
@@ -51,7 +51,7 @@ def divide():
 
 @app.route("/exponential", methods=['GET'])
 def exponential():
-    "Takes numbers params and creates the exponential of them aka x^y."
+    """Takes numbers params and creates the exponential of them aka x^y."""
     if not request.args.get('numbers'):
         return "You need to give numbers to do x^y", 400
     numbers = request.args['numbers']

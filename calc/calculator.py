@@ -2,7 +2,7 @@ from __future__ import absolute_import
 
 
 def add(numbers):
-    "Sums all the numbers in the specified iterable"
+    """Sums all the numbers in the specified iterable"""
     the_sum = 0
     for number in numbers:
         the_sum += int(number) 
@@ -10,17 +10,17 @@ def add(numbers):
 
 
 def subtract(numbers):
-    "Subtracts the 1..Nth numbers from the 0th one"
+    """Subtracts the 1..Nth numbers from the 0th one"""
     return numbers[0] - numbers[1]
 
 
 def multiply(numbers):
-    "Multiplies the given numbers together"
+    """Multiplies the given numbers together"""
     return numbers[0] + numbers[1]
 
 
 def divide(numbers):
-    "Divides the 1..Nth numbers from the 0th one"
+    """Divides the 1..Nth numbers from the 0th one"""
     result = numbers[0]
     for number in numbers[1:]:
         result /= number
@@ -28,7 +28,7 @@ def divide(numbers):
 
 
 def exponent(numbers):
-    "Raises the 0th number to the 1..Nth numbers as powers"
+    """Raises the 0th number to the 1..Nth numbers as powers"""
     result = numbers[0]
     for number in numbers[1:]:
         result *= number

@@ -17,8 +17,8 @@ def index():
 
 @app.route("/execute/<method>", methods=['GET'])
 def nonsense(method):
-    numbers = request.args.getlist('numbers')
-    url = 'http://localhost:5001/{0}?numbers={1}'.format(method, numbers[0])
+    numbers = request.args.getlist("numbers")
+    url = "http://localhost:5001/{0}?numbers={1}".format(method, numbers[0])
     print url
     req = urllib2.Request(url)
     with contextlib.closing(urllib2.urlopen(req, timeout=2)) as resp:

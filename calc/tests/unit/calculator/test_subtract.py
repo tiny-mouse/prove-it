@@ -11,7 +11,7 @@ class TestSubtract(unittest.TestCase):
         self.assertEqual(4, calculator.subtract([2]))
 
     def test_subtract_three(self):
-        "Why is this test not great?"
+        """Why is this test not great?"""
         self.assertEqual(4, calculator.add([1,2,1]))
 
     def test_subtract_four(self):

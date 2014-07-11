@@ -5,7 +5,7 @@ from calc.tests.base import CalcTestBase
 
 
 class TestMultiply(CalcTestBase):
-    "This is a a real and proper unit test for what that view is doing"
+    """This is a a real and proper unit test for what that view is doing"""
 
     @mock.patch('calc.views.calculator')
     def test_multiply_two_numbers(self, mock_calculator):

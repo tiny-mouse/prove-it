@@ -20,7 +20,7 @@ class TestAdd(CalcTestBase):
         self.assertEqual(resp.data, '4')
 
     def test_add_mock(self):
-        "Why is this test passing?"
+        """Why is this test passing?"""
         with mock.patch('calc.views.calculator.add') as mock_calculator:
             mock_calculator.return_value = 1
             resp = self.app.get('/add?numbers=1&numbers=2')
